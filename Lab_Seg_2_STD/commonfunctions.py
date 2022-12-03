@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from skimage.exposure import histogram
 from matplotlib.pyplot import bar
-from skimage.color import rgb2gray,rgb2hsv
+from skimage.color import rgb2gray,rgba2rgb,rgb2hsv
 
 # Convolution:
 from scipy.signal import convolve2d
@@ -17,6 +17,8 @@ from skimage.filters import median
 from skimage.feature import canny
 from skimage.measure import label
 from skimage.color import label2rgb
+from operator import mul
+from itertools import starmap
 
 
 # Edges
