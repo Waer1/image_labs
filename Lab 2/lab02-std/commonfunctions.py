@@ -90,9 +90,6 @@ def show_3d_image_filtering_in_freq(img, f):
 
 
 def showHist(img):
-    # An "interface" to matplotlib.axes.Axes.hist() method
     plt.figure()
     imgHist = histogram(img, nbins=256)
-
     bar(imgHist[1].astype(np.uint8), imgHist[0], width=0.8, align='center')
-
